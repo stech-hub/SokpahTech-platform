@@ -1,98 +1,123 @@
 export const metadata = {
   title: "Products & Services | Akin S. Sokpah",
   description:
-    "Explore apps, websites, AI platforms, and digital services built by Akin S. Sokpah."
+    "Explore apps, websites, AI platforms, and digital services built by Akin S. Sokpah.",
 };
 
 export default function ProductsPage() {
   return (
     <main style={styles.page}>
-      {/* HERO */}
-      <section style={styles.hero}>
+      {/* HEADER */}
+      <section style={styles.header}>
         <h1 style={styles.title}>Products & Services</h1>
         <p style={styles.subtitle}>
-          Powerful apps, intelligent systems & digital solutions built for real impact
+          Real digital products, apps, and platforms built for impact
         </p>
       </section>
 
-      {/* APPS */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>📱 Mobile Apps</h2>
-
-        <div style={styles.grid}>
-          <div style={styles.card}>
-            <h3 style={styles.cardTitle}>BioNurse App</h3>
-            <p style={styles.cardText}>
-              A healthcare-focused mobile application designed to support nurses
-              and medical workflows.
-            </p>
-            <a
-              href="https://github.com/stech-hub/bionurseapk-website/releases/download/v1/myapp.apk"
-              style={styles.download}
-            >
-              Download APK
-            </a>
-          </div>
+      {/* PRODUCTS GRID */}
+      <section style={styles.grid}>
+        {/* BIO NURSE APP */}
+        <div style={styles.cardDark}>
+          <h3 style={styles.cardTitle}>📱 BioNurse Mobile App</h3>
+          <p style={styles.text}>
+            A healthcare-focused mobile app designed to assist nurses and
+            medical professionals.
+          </p>
+          <ul style={styles.list}>
+            <li>✔ Android APK</li>
+            <li>✔ Fast & Lightweight</li>
+            <li>✔ Real-world use</li>
+          </ul>
+          <a
+            href="https://github.com/stech-hub/bionurseapk-website/releases/download/v1/myapp.apk"
+            style={styles.buttonGold}
+          >
+            Download APK
+          </a>
         </div>
-      </section>
 
-      {/* WEBSITES */}
-      <section style={styles.sectionAlt}>
-        <h2 style={styles.sectionTitle}>🌐 Live Websites</h2>
-
-        <div style={styles.grid}>
-          <div style={styles.card}>
-            <h3 style={styles.cardTitle}>Full Task AI Platform</h3>
-            <p style={styles.cardText}>
-              An AI-powered productivity platform for task management and automation.
-            </p>
-            <a
-              href="https://full-task-ai.vercel.app/"
-              target="_blank"
-              style={styles.view}
-            >
-              Visit Website
-            </a>
-          </div>
+        {/* AI WEBSITE */}
+        <div style={styles.cardLight}>
+          <h3 style={styles.cardTitleDark}>🤖 Full Task AI Platform</h3>
+          <p style={styles.textDark}>
+            An AI-powered website that helps automate tasks and improve
+            productivity.
+          </p>
+          <ul style={styles.listDark}>
+            <li>✔ AI-powered</li>
+            <li>✔ Cloud-based</li>
+            <li>✔ Live production</li>
+          </ul>
+          <a
+            href="https://full-task-ai.vercel.app/"
+            target="_blank"
+            style={styles.buttonDark}
+          >
+            Visit AI Website
+          </a>
         </div>
-      </section>
 
-      {/* SERVICES */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>🛠 Services</h2>
-
-        <div style={styles.grid}>
-          {[
-            "Website Development",
-            "Mobile App Development",
-            "AI Solutions & Automation",
-            "Dashboards & Admin Panels",
-            "E-Commerce Platforms",
-            "UI/UX Design",
-            "Tech Consulting",
-            "Hosting & Deployment",
-            "Maintenance & Support",
-          ].map((service) => (
-            <div key={service} style={styles.service}>
-              {service}
-            </div>
-          ))}
+        {/* WEBSITE DEVELOPMENT */}
+        <div style={styles.cardGold}>
+          <h3 style={styles.cardTitleDark}>🌐 Website Development</h3>
+          <p style={styles.textDark}>
+            Modern, fast, SEO-optimized websites for individuals, startups,
+            and businesses.
+          </p>
+          <ul style={styles.listDark}>
+            <li>✔ Business websites</li>
+            <li>✔ Landing pages</li>
+            <li>✔ GitHub / Vercel deployment</li>
+          </ul>
+          <a
+            href="https://wa.me/231777789356"
+            target="_blank"
+            style={styles.buttonDark}
+          >
+            Order a Website
+          </a>
         </div>
-      </section>
 
-      {/* CTA */}
-      <section style={styles.cta}>
-        <h2 style={styles.ctaTitle}>Have an Idea or Project?</h2>
-        <p style={styles.ctaText}>
-          Let’s turn your idea into a real, scalable digital product.
-        </p>
-        <a
-          href="https://wa.me/231777789356"
-          target="_blank"
-          style={styles.ctaButton}
-        >
-          Start on WhatsApp
-        </a>
+        {/* APP DEVELOPMENT */}
+        <div style={styles.cardOutline}>
+          <h3 style={styles.cardTitle}>📦 App Development</h3>
+          <p style={styles.text}>
+            Custom mobile and web apps tailored to your business needs.
+          </p>
+          <ul style={styles.list}>
+            <li>✔ Android Apps</li>
+            <li>✔ Web Apps</li>
+            <li>✔ Dashboard systems</li>
+          </ul>
+          <a
+            href="https://wa.me/231777789356"
+            target="_blank"
+            style={styles.buttonGold}
+          >
+            Build an App
+          </a>
+        </div>
+
+        {/* CONSULTING */}
+        <div style={styles.cardDark}>
+          <h3 style={styles.cardTitle}>🧠 Tech Consulting</h3>
+          <p style={styles.text}>
+            Expert guidance for startups, founders, and businesses.
+          </p>
+          <ul style={styles.list}>
+            <li>✔ Strategy</li>
+            <li>✔ System design</li>
+            <li>✔ AI & automation</li>
+          </ul>
+          <a
+            href="https://wa.me/231777789356"
+            target="_blank"
+            style={styles.buttonGold}
+          >
+            Book Consulting
+          </a>
+        </div>
       </section>
     </main>
   );
@@ -105,101 +130,98 @@ const styles = {
     background:
       "linear-gradient(135deg, #FFD700, #FFE4F1, #FFF4B0)",
   },
-  hero: {
+  header: {
     textAlign: "center",
-    marginBottom: "60px",
+    marginBottom: "50px",
   },
   title: {
-    fontSize: "2.8rem",
+    fontSize: "2.7rem",
     fontWeight: "900",
     color: "#111",
   },
   subtitle: {
     marginTop: "10px",
-    color: "#444",
     fontSize: "1.1rem",
-  },
-  section: {
-    maxWidth: "1100px",
-    margin: "0 auto 60px",
-  },
-  sectionAlt: {
-    maxWidth: "1100px",
-    margin: "0 auto 60px",
-    background: "#fff",
-    padding: "40px",
-    borderRadius: "20px",
-    boxShadow: "0 20px 50px rgba(0,0,0,0.1)",
-  },
-  sectionTitle: {
-    fontSize: "1.9rem",
-    fontWeight: "800",
-    marginBottom: "24px",
+    color: "#333",
   },
   grid: {
+    maxWidth: "1200px",
+    margin: "0 auto",
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-    gap: "24px",
+    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+    gap: "26px",
   },
-  card: {
+  cardDark: {
     background: "#111",
     color: "#fff",
     padding: "28px",
-    borderRadius: "18px",
-    boxShadow: "0 16px 40px rgba(0,0,0,0.25)",
+    borderRadius: "20px",
+  },
+  cardLight: {
+    background: "#fff",
+    padding: "28px",
+    borderRadius: "20px",
+  },
+  cardGold: {
+    background: "#FFD700",
+    padding: "28px",
+    borderRadius: "20px",
+  },
+  cardOutline: {
+    background: "#fff",
+    padding: "28px",
+    borderRadius: "20px",
+    border: "2px solid #111",
   },
   cardTitle: {
     fontSize: "1.4rem",
     fontWeight: "800",
+    marginBottom: "12px",
     color: "#FFD700",
-    marginBottom: "10px",
   },
-  cardText: {
-    color: "#eee",
+  cardTitleDark: {
+    fontSize: "1.4rem",
+    fontWeight: "800",
+    marginBottom: "12px",
+  },
+  text: {
     lineHeight: "1.6",
-    marginBottom: "18px",
+    marginBottom: "14px",
   },
-  download: {
-    background: "#25D366",
-    color: "#fff",
-    padding: "10px 18px",
-    borderRadius: "999px",
-    textDecoration: "none",
-    fontWeight: "700",
+  textDark: {
+    lineHeight: "1.6",
+    marginBottom: "14px",
   },
-  view: {
+  list: {
+    listStyle: "none",
+    padding: 0,
+    lineHeight: "1.7",
+    fontWeight: "600",
+    marginBottom: "16px",
+  },
+  listDark: {
+    listStyle: "none",
+    padding: 0,
+    lineHeight: "1.7",
+    fontWeight: "600",
+    marginBottom: "16px",
+  },
+  buttonGold: {
+    display: "inline-block",
     background: "#FFD700",
     color: "#111",
-    padding: "10px 18px",
+    padding: "12px 22px",
     borderRadius: "999px",
+    fontWeight: "800",
     textDecoration: "none",
-    fontWeight: "700",
   },
-  service: {
-    background: "#fff",
-    padding: "18px",
-    borderRadius: "14px",
-    fontWeight: "700",
-    boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
-  },
-  cta: {
-    textAlign: "center",
-    marginTop: "80px",
-  },
-  ctaTitle: {
-    fontSize: "2rem",
-    fontWeight: "900",
-  },
-  ctaText: {
-    margin: "12px 0 20px",
-    color: "#444",
-  },
-  ctaButton: {
+  buttonDark: {
+    display: "inline-block",
     background: "#111",
     color: "#FFD700",
-    padding: "14px 26px",
+    padding: "12px 22px",
     borderRadius: "999px",
-    textDecoration: "none",
     fontWeight: "800",
+    textDecoration: "none",
   },
 };
