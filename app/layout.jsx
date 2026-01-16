@@ -1,29 +1,26 @@
-import "./globals.css";
+import "../styles/globals.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Akin S. Sokpah | Founder • Developer • AI Innovator",
+  title: "Akin S. Sokpah | Software Developer & AI Innovator",
   description:
-    "Premium technology solutions, apps, websites, dashboards, and AI systems built by Akin S. Sokpah from Liberia to the world.",
+    "Premium websites, apps, AI solutions, dashboards, and digital products built by Akin S. Sokpah from Liberia.",
   keywords: [
     "Akin Sokpah",
-    "Liberia developer",
-    "African tech founder",
-    "AI developer",
-    "Web development",
-    "Apps",
+    "Liberia Software Developer",
+    "AI Developer Africa",
+    "Web Development",
+    "Mobile Apps",
     "Dashboards",
-    "Tech consulting"
   ],
   openGraph: {
-    title: "Akin S. Sokpah | Official Platform",
+    title: "Akin S. Sokpah",
     description:
-      "Apps, websites, dashboards, AI systems, and consulting services.",
+      "Building modern websites, apps, dashboards, and AI systems for Africa and the world.",
     url: "https://your-vercel-domain.vercel.app",
     siteName: "Akin S. Sokpah",
-    type: "website"
-  }
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -32,7 +29,6 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );
